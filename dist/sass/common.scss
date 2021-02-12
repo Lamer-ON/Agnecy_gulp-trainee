@@ -1,0 +1,131 @@
+$red: red;
+$maxWidth: 1249px;
+$fw-reg: 400;
+$fw-sbold: 600;
+$fw-bold: 700;
+$fw-exbold: 800;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1577px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: $fw-reg;
+  background-color: #ccc;
+}
+
+main{
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 108px;
+  padding-bottom: 108px;
+  @media (max-width: 1200px) {
+    padding-top: 60px!important;
+    padding-bottom: 60px!important;
+  }
+  @media (max-width: 720px) {
+    padding-top: 40px!important;
+    padding-bottom: 40px!important;
+  }
+}
+
+.container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+.link-btn:hover{
+  transform: scale(1.02);
+}
+
+
+.title {
+  margin: 0 0 40px;
+  font-size: 42px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  line-height: 1.31;
+  text-align: left;
+  @media (max-width: 1200px) {
+   font-size: 26px!important;
+   margin: 0 0 30px!important;
+  }
+  @media (max-width: 540px) {
+   font-size: 18px!important;
+   margin: 0 0 15px!important;
+  }
+}
+
+.subtitle {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1.75;
+  font-weight: $fw-reg;
+  text-align: left;
+  @media (max-width: 720px) {
+    line-height: 1.2!important;
+  }
+}
+
+// .link-btn.red-link {
+//   background-color: #de5a0b;
+// }
+.red-link {
+  background-color: #ff2d2d;
+}
+.white-link{
+  background-color: #fff;
+  border: 2px solid #ff2d2d!important;
+  color: #ff2d2d!important;
+}
+
+.link-btn {
+  width: 227px;
+  margin-top: 50px;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: $fw-bold;
+  line-height: 0.9;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+
+
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}

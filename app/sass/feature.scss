@@ -1,0 +1,137 @@
+.feature {
+    background-color: #fff;
+
+    .feature__slogan {
+        margin: 0 auto;
+    }
+
+    .feature__slogan-title {
+        margin-bottom: 25px;
+        font-size: 38px;
+        font-weight: $fw-bold;
+        color: rgba(0, 0, 0, 0.8);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .feature__slogan-subtitle {
+        max-width: 540px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .feature__slogan-subtitle::after {
+        content: '';
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 80px;
+        background-color: rgb(255, 45, 45);
+        display: block;
+        width: 132px;
+        height: 3px;
+
+        @media (max-width: 960px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .feature__menu {
+        background-color: #fff;
+        margin-bottom: 60px;
+
+        @media (max-width: 720px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .menu__list {
+        @media (max-width: 720px) {
+            flex-wrap: wrap;
+            width: 350px;
+            margin: 0 auto;
+            // text-align: center;
+
+        }
+
+        @media (max-width: 540px) {
+            flex-wrap: wrap;
+            width: 140px;
+            margin: 0 auto;
+        }
+    }
+
+    .menu__list-item {
+        padding: 0;
+    }
+
+    .menu__list-item+.menu__list-item {
+        margin-left: 60px;
+
+        @media (max-width: 960px) {
+            margin-left: 30px;
+        }
+
+        @media (max-width: 540px) {
+            margin-left: 0;
+        }
+    }
+
+    .menu__list-item--active {
+        background-color: transparent;
+
+        & .menu__list-link {
+            color: #ff2d2d;
+        }
+    }
+
+    .menu__list-link {
+        color: #000;
+
+        @media (max-width: 720px) {
+            line-height: 2;
+        }
+    }
+
+
+    .card-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media (max-width: 1200px) {
+            justify-content: space-evenly;
+        }
+    }
+
+    .card-item {
+        padding: 0;
+        max-width: 280px;
+        width: 100%;
+
+        @media (max-width: 1200px) {
+            margin-bottom: 20px;
+            padding: 0 5px;
+        }
+
+    }
+
+    .card-item:first-child {
+        margin-bottom: 20px;
+    }
+
+    .card-foto {
+
+        height: 290px;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+
+        @media (max-width: 540px) {
+            width: 240px;
+            height: 200px;
+            margin: 0 auto;
+        }
+    }
+
+}
